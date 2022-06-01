@@ -1,0 +1,278 @@
+/* цвет текста заголовков #212121 */
+/* цвет основного текста rgba(117, 117, 117, 1) */
+/* цвет акцента и первой части лого в шапке и подвале #2196F3 */
+/* цвет второй части лого в шапке #000000 */
+/* цвет второй части лого в подвале и текста в герое #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона героя #2F303A */
+
+:root {
+  --primery-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: #212121;
+  --accennt-color: #2196f3;
+  --background-color: #2f303a;
+  --command-bg-color: #f5f4fa;
+  --primery-bg-color: #ffffff;
+  --button-color: #188ce8;
+  --header-list-color: #757575;
+  --address-list-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primery-text-color);
+  background-color: var(--primery-bg-color);
+  font-family: Roboto, sans-serif;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/*            header            */
+.header {
+  background-color: var(--primery-bg-color);
+}
+.header-logo {
+  color: var(--accennt-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.header span {
+  color: var(--title-text-color);
+}
+.header-nav {
+  color: var(--title-text-color);
+}
+.header-list .link.current {
+  color: var(--accennt-color);
+}
+.header-logo .link:hover,
+.header-logo .link:focus {
+  color: var(--accennt-color);
+}
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--accennt-color);
+}
+.header-item {
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.header-mail {
+  color: var(--header-list-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-list-color);
+}
+
+/*                     hero                  */
+.hero {
+  background-color: var(--background-color);
+}
+.hero-title {
+  color: var(--primery-bg-color);
+  background-color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--primery-bg-color);
+  background-color: var(--accennt-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button.activ:hover,
+.hero-button.activ:focus {
+  color: var(--primery-bg-color);
+  background-color: var(--button-color);
+}
+
+/*                  benefits                  */
+.benefits {
+  background-color: var(--primery-bg-color);
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.list {
+}
+.benefits-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-text {
+  color: var(--header-list-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*               worktipes                */
+.worktypes {
+  background-color: var(--primery-bg-color);
+}
+.worktypes-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.worktypes-list {
+}
+.worktypes-item {
+}
+
+/*                      command                  */
+.command {
+  background-color: var(--command-bg-color);
+}
+.command-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.command-text {
+  color: var(--header-list-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.command-list {
+}
+.command-item {
+}
+.command-photo {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*               footer                 */
+.footer {
+  color: var(--primery-bg-color);
+  background-color: var(--background-color);
+}
+.footer .footer-logo {
+  color: var(--accennt-color);
+  color: var(--accennt-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer span {
+  color: var(--primery-bg-color);
+}
+.address {
+}
+.address-text {
+  color: var(--primery-bg-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accennt-color);
+}
+.address-item {
+}
+.address-mail {
+  color: var(--address-list-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-tel {
+  color: var(--address-list-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*               portfolio               */
+.portfolio {
+}
+.portfoliobutton:hover,
+.portfoliobutton:focus {
+  color: var(--primery-bg-color);
+  background-color: var(--accennt-color);
+}
+.portfoliobutton-item {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  color: var(--header-list-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.portfoliobutton {
+  color: var(--title-text-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
