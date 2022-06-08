@@ -23,6 +23,14 @@
   --box-shadow-three: rgba(0, 0, 0, 0.2);
 }
 
+p,h1,h2,h3,h4 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   color: var(--primery-text-color);
   background-color: var(--primery-bg-color);
@@ -59,6 +67,12 @@ body {
   display: flex;
 }
 
+.header-contacts {
+  display: flex;
+}
+.header-contacts .header-item + .header-item {
+  margin-left: 50px;
+}
 .header-list .header-item + .header-item {
   margin-left: 50px;
 }
@@ -97,12 +111,20 @@ body {
   color: var(--title-text-color);
 }
 
-.contacts {
+.container-contacts {
   margin-left: auto;
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accennt-color);
 }
 
 .header-mail,
 .header-tel {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--header-list-color);
   font-weight: 500;
   font-size: 14px;
@@ -115,9 +137,16 @@ body {
   background-color: var(--background-color);
   text-align: center;
 }
+.hero-container {
+  max-width: 696px;
+  margin: auto;
+  margin-right: auto;
+  padding: 200px 0;
+}
+
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
   color: var(--primery-bg-color);
   background-color: var(--background-color);
   font-weight: 900;
@@ -147,6 +176,19 @@ body {
 }
 
 /*                  benefits                  */
+.visually-hidden {
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px; 
+  border: 0; 
+  padding: 0; 
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0); 
+  overflow: hidden;
+}
+
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -185,8 +227,6 @@ body {
 /*               worktipes                */
 .worktypes {
   background-color: var(--primery-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .worktypes-title {
   margin-top: 0;
@@ -231,8 +271,7 @@ body {
   letter-spacing: 0.03em;
 }
 .command-text {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: var(--header-list-color);
   font-size: 16px;
   line-height: 1.19;
@@ -251,7 +290,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .command-photo {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -260,11 +298,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.command-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /*               footer                 */
 .footer {
   color: var(--primery-bg-color);
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .footer-logo {
@@ -390,5 +434,6 @@ body {
   background-color: var(--accennt-color);
 }
 .portfolio-bottom {
+padding: 20px 24px;
 border: 1px solid var(--border-color);
 }
