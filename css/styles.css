@@ -60,7 +60,6 @@ body {
 
 .main-list {
   display: flex;
-  align-items: center;
 }
 
 .header-list {
@@ -135,7 +134,6 @@ body {
 /*                     hero                  */
 .hero {
   background-color: var(--background-color);
-  text-align: center;
 }
 .hero-container {
   max-width: 696px;
@@ -157,8 +155,10 @@ body {
   text-transform: uppercase;
 }
 .hero-button {
-  border-radius: 4px;
+  display: flex;
+  margin: 0 auto;
   padding: 10px 32px;
+  border-radius: 4px;
   color: var(--primery-bg-color);
   background-color: var(--accennt-color);
   font-family: inherit;
