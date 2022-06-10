@@ -80,7 +80,7 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 43px;
+  margin-right: 93px;
   color: var(--accennt-color);
   font-family: "Raleway";
   font-weight: 700;
@@ -134,12 +134,12 @@ body {
 /*                     hero                  */
 .hero {
   background-color: var(--background-color);
+  padding: 200px 0;
 }
 .hero-container {
   max-width: 696px;
   margin: auto;
   margin-right: auto;
-  padding: 200px 0;
 }
 
 .hero-title {
@@ -159,6 +159,7 @@ body {
   margin: 0 auto;
   padding: 10px 32px;
   border-radius: 4px;
+  border: transparent;
   color: var(--primery-bg-color);
   background-color: var(--accennt-color);
   font-family: inherit;
@@ -226,6 +227,7 @@ body {
 
 /*               worktipes                */
 .worktypes {
+  padding-bottom: 94px;
   background-color: var(--primery-bg-color);
 }
 .worktypes-title {
@@ -247,8 +249,7 @@ body {
   margin-left: 30px;
 }
 
-.photo {
-  background-color: var(--primery-bg-color);
+.worktypes-photo {
   display: block;
   max-width: 100%, 
   height: auto
@@ -301,6 +302,13 @@ body {
 .command-container {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.photo {
+  background-color: var(--primery-bg-color);
+  display: block;
+  max-width: 100%, 
+  height: auto
 }
 
 /*               footer                 */
@@ -376,7 +384,7 @@ body {
 }
 .portfoliobutton-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .portfoliobutton-list .portfoliobutton-item + .portfoliobutton-item {
@@ -400,7 +408,6 @@ body {
 }
 
 .portfolio-title {
-  margin-top: 20px;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
